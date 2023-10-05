@@ -12,7 +12,7 @@ import RegisterPage from './pages/authPage/RegisterPage';
 /**create routes */
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     exact: true,
     element:<HomePage/>
   },
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     element:<LoginPage/>
   },
   {
-    path: "/register",
+    path: "/",
     exact: true,
     element:<RegisterPage/>
   },
