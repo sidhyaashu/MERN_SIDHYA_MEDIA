@@ -1,0 +1,71 @@
+.course-card-container {
+    height: 16rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+        height: 10rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .details-box {
+        width: 100%;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            justify-content: flex-start;
+
+            .MuiAvatar-root {
+                height: var(--avatar-mid-font-size);
+                width: var(--avatar-mid-font-size);
+            }
+            p {
+                font-size: var(--info-small-font-siez);
+                font-weight: var(--font-semi-bold);
+            }
+
+            small {
+                font-size: var(--info-micro-small-font-size);
+            }
+        }
+
+        .video-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: var(--info-mini-small-font-size);
+                }
+            }
+            .card-navlink {
+                text-decoration: none;
+                color: inherit;
+                padding: 0.3rem 0.7rem;
+                font-size: var(--info-small-font-siez);
+                border-radius: 15px;
+                background-color: var(--first-color);
+                transition: all 0.3s ease-in;
+                font-weight: var(--font-semi-bold);
+            }
+
+            .card-navlink:hover {
+                background-color: var(--hover-first-color);
+                -webkit-box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+                -moz-box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+                box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+            }
+        }
+    }
+}

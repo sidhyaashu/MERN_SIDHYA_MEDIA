@@ -6,7 +6,7 @@ import helmet from "helmet";
 import dotenv from "dotenv";
 dotenv.config();
 import mongoose from "mongoose";
-
+import cookieParser from "cookie-parser"
 
 /** Import configaration */
 import connectDB from "./database/dbConnection.js"
@@ -23,7 +23,7 @@ app.use(morgan("tiny"));
 app.use(helmet());
 app.use(cors());
 app.use(express.urlencoded({ extended:false}))
-
+app.use(cookieParser());
 
 
 

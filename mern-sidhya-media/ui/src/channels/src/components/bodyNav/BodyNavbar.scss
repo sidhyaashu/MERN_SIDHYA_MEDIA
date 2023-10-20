@@ -1,0 +1,24 @@
+.body-navbar{
+    display: flex;
+    gap: 1rem;
+}
+.navbar-navlink{
+    text-decoration: none;
+    color: inherit;
+    padding:var(--channel-navbar-padding) ;
+    border-radius: var(--channel-navbar-radius);
+    transition: all .3s ease;
+    background-color: var(--nav-background-color-hover);
+    min-width: fit-content;
+
+    small{
+        font-size: var(--sidebar-small-font-size);
+    }
+}
+
+.navbar-navlink:hover{
+    background-color: var(--nav-background-color);
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+    box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+}

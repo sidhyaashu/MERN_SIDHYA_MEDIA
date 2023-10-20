@@ -33,6 +33,8 @@ const LoginPage = () => {
       email,
       pwd
     })
+
+    navigate("/home")
   }
 
 

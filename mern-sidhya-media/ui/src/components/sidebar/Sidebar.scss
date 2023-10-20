@@ -1,0 +1,38 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: .5rem .6rem;
+    height: calc(100vh - 2.7rem);   
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border-right:1px solid rgba(60, 60, 60, 0.9);
+    // position: fixed;
+    // left: 0;
+    // top: 2.7rem;
+
+
+    .nav-link{
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+        text-decoration: none;
+        color: inherit;
+        padding: var(--sidebar-padding);
+        border-radius: 30px ;
+        transition: all .3s ease-in-out;
+
+        .MuiSvgIcon-root{
+            font-size: var(--icon-small-font-size);
+        }
+
+        small{
+            font-size: var(--sidebar-small-font-size);
+            font-weight: var(--font-semi-bold) ;
+        }
+    }
+
+    .nav-link:hover{
+        background-color: var(--hover-color);
+    }
+}

@@ -58,6 +58,8 @@ const RegisterPage = () => {
       email,
       pwd,
     });
+
+    navigate("/home")
   };
 
   return (

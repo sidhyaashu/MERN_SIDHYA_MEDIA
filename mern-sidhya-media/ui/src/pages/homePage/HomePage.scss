@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    flex-direction: column;
+    // height: calc(100vh - 2.7rem);
+
+    .home-page-body{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin-top: 2.7rem;
+        overflow-y: scroll;
+        // height: 100%;
+    }
+}

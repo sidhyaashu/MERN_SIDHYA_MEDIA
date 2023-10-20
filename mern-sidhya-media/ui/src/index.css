@@ -1,10 +1,5 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inter:wght@400;600;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&family=Work+Sans:wght@300&display=swap');
+/* import 'remixicon/fonts/remixicon.css' */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -12,18 +7,91 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #fff;
+  background-color: #282828;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  
+
+  --header-height: 3.5rem;
+
+  /* color mode HSL (hue,saturation,lightness) */
+  --first-color: hsl(220, 64%, 54%);
+  --title-color: hsl(220, 48%, 28%);
+  --text-color: hsl(220, 12%, 45%);
+  --body-color: hsl(220, 100%, 99%);
+
+  --hover-color: hsl(0, 0%, 30%);
+
+
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: .938rem;
+  --mid-font-size: .813rem;
+  --small-font-size: .75rem;
+  --info-small-font-siez: .65rem;
+  --info-micro-small-font-size: .45rem;
+  --info-mini-small-font-size: .55rem;
+  --sidebar-small-font-size: .68rem;
+
+
+  --icon-mid-font-size: 1.2rem;
+  --icon-small-font-size: 1.1rem;
+
+
+  --avatar-mid-font-size: 32px;
+
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+
+  --logo-color: rgb(190, 0, 0);
+  --logo-font-size: 1.5rem;
+
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+
+  --add-panel-min-helight:18rem;
+  --add-panel-max-helight:24rem;
+
+  --nav-background-color: #ffffff14;
+  --nav-background-color-hover: #acacac14;
+  --background-color:#282828;
+
+
+  --sidebar-padding:.5rem 1rem;
+  
+  --yt-red:#FF0000;
+  
+  --universal-border-radius:10px;
+  
+  
+  --channel-navbar-padding:.1rem 1.3rem;
+  --channel-navbar-radius:20px;
+
+
+  --hover-first-color: hsl(220, 65%, 44%);
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
-html{
-  font-family: 'Nunito',sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
   font-size: 22px;
   color: #fff;
 }
@@ -64,4 +132,32 @@ body {
 .offscreen {
   position: absolute;
   left: -9999px;
+}
+
+
+.exploreBTN {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 1.8rem;
+  background-color: var(--yt-red);
+  border-radius: 1.5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  border: 1px solid var(--first-color);
+  transition: all 0.3s ease;
+}
+
+.exploreBTN:hover {
+  border: 1px solid white;
+  -webkit-box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
+  background-color: var(--first-color);
+}
+
+
+.universal-box-shadow{
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
+    box-shadow: 0px 0px 3px 1px rgba(71, 71, 71, 1);
 }

@@ -1,0 +1,17 @@
+.channel-body-container{
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+    height: 100%;
+    // background-color: blue;
+    gap: 1rem;
+
+    .channel-body-sidebar,
+    .channel-body-content{
+        height: 100%;
+    }
+
+    .channel-body-content{
+        overflow-y: scroll;
+        // padding: 1rem;
+    }
+}

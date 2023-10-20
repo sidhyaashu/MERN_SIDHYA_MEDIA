@@ -1,0 +1,33 @@
+.indivisual-sidebar-elements {
+    text-decoration: none;
+    color: inherit;
+    padding: var(--sidebar-padding);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+
+    .MuiSvgIcon-root {
+        font-size: var(--icon-small-font-size);
+    }
+
+    small {
+        font-size: var(--sidebar-small-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+}
+
+.indivisual-sidebar-elements:hover {
+    background-color: var(--hover-color);
+}
+
+.channelSidebar {
+    display: flex;
+    flex-direction: column;
+    // background-color: aliceblue;
+    padding: 1rem;
+    gap: .3rem;
+    border-radius: 10px;
+}
